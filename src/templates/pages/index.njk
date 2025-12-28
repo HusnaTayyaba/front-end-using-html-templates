@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Web UI with Bootstrap 5</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ===== GLOBAL ===== */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: linear-gradient(90deg, #c06edc, #6366f1);
+      padding: 14px 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /*.navbar-brand*/
+    .navbar-brand{
+      text-shadow: 0 0 10px rgba(142, 142, 229, 0.3);
+      font-family: 'Georgia', serif;
+      letter-spacing: 3px;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, color 0.3s ease;
+      color: #e7dee3 !important;
+      transform: scale(1.05);
+    }
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #ffdd57 !important;
+    }
+
+    .nav-link.active {
+      border-bottom: 2px solid #da17a6;
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #255caa;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 15px auto;
+      font-size: 1.1rem;
+      color: #4b5563;
+    }
+
+    .hero .btn {
+      margin-top: 25px;
+      padding: 12px 32px;
+      border-radius: 30px;
+    }
+
+    /* ===== FEATURES ===== */
+    .features {
+      padding: 60px 20px;
+    }
+
+    .feature-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-card h5 {
+      font-weight: 600;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #1f2937;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Modern Web UI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h1>Interactive Web Design Using Bootstrap 5</h1>
+    <p>
+      This project demonstrates how Bootstrap 5 components can be combined
+      to create clean, modern, and responsive web pages.
+    </p>
+    <a href="aboutus.html" class="btn btn-primary">Explore More</a>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="features">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h2 class="fw-bold">Key Features</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card feature-card p-4 text-center">
+            <h5>Responsive Design</h5>
+            <p>Works smoothly on desktop, tablet, and mobile devices.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-4 text-center">
+            <h5>Bootstrap Components</h5>
+            <p>Built using navbars, cards, grids, and utility classes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-4 text-center">
+            <h5>Clean Code</h5>
+            <p>Well-structured HTML and minimal custom CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Bootstrap UI Project | Internship Task</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
